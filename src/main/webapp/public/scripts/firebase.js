@@ -19,8 +19,8 @@ function register () {
   email = document.getElementById('email').value
   password = document.getElementById('password').value
   full_name = document.getElementById('full_name').value
-  favourite_song = document.getElementById('favourite_song').value
-  milk_before_cereal = document.getElementById('milk_before_cereal').value
+  apelido_user = document.getElementById('apelido_user').value
+  
 
   // Validate input fields
   if (validate_email(email) == false || validate_password(password) == false) {
@@ -28,7 +28,7 @@ function register () {
     return
     // Don't continue running the code
   }
-  if (validate_field(full_name) == false || validate_field(favourite_song) == false || validate_field(milk_before_cereal) == false) {
+  if (validate_field(full_name) == false || validate_field(apelido_user) == false) {
     alert('One or More Extra Fields is Outta Line!!')
     return
   }
@@ -46,8 +46,7 @@ function register () {
     var user_data = {
       email : email,
       full_name : full_name,
-      favourite_song : favourite_song,
-      milk_before_cereal : milk_before_cereal,
+      apelido_user : apelido_user,
       last_login : Date.now()
     }
 
