@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="public/css/style_all.css">
+	 <link rel="stylesheet" href="public/css/style_perfil.css"> 
+	<title>Inicio</title>
+</head>
+<body>
+	
+	<div id="inicio-cabecalho">
+		<div class="hero">
+			<nav>	
+			<input type="text" name="tarefa" id="tarefa" placeholder="Pesquise uma tarefa" autocomplete="off">	
+         	 <img src="public/images/user.png" class="user-pic"onclick="toggleMenu()">
+         	 <div class="sub-menu-wrap" id="subMenu">
+         	 	<div class="sub-menu">
+         	 		<div class="user-info">
+         	 			<img src="public/images/user.png">
+         	 			<h5>James Aldrino</h5>
+         	 			</div>
+         	 			<hr>
+         	 			<a href="#" class="sub-menu-link">
+							<img src="public/images/profile.png">
+							<p>Perfil</p>
+							<span></span>         	 			
+         	 			</a>
+         	 			<a href="#" class="sub-menu-link">
+							<img src="public/images/help.png">
+							<p>Help</p>
+							<span></span>         	 			
+         	 			</a>
+         	 			<a href="index.html" class="sub-menu-link">
+							<img src="public/images/logout.png">
+							<p>Deslogar</p>
+							<span></span>         	 			
+         	 			</a>
+         		 </div>
+         	 </div>
+			</nav>	
+		</div>
+	
+	</div>	
+	<hr style="margin-top: 6px; border: 3px inset">
+	
+	<div id="area-esquerda">
+
+		<a href="creater_task.html" style="text-decoration: none;">
+        <input type="submit" value="+ criar tarefa">
+    	</a>
+    	<a href="list_task.html" style="text-decoration: none;">
+        <input type="submit" value="+ lista de tarefa">
+    	</a>
+    	<a href="calender_task.html" style="text-decoration: none;">
+        <input type="submit" value="calendario">
+    	</a>
+
+	
+	</div>
+
+	<div id="principal-container">
+
+		<input type="text" name="tarefa" id="tarefa" placeholder="Titulo da tarefa" autocomplete="off">
+
+		<hr style="border: inset">
+
+		<div style=" margin: auto; margin-left: 10px; margin-top: 30px; font-weight: bold;">STATUS</div>
+		<div id="secundario-container" style="margin-left: 85px; margin-top: -18px;">
+		<input type="submit" value="realizado">
+		<input type="submit" value="pendente">
+		<input type="submit" value="cancelado">
+		</div>
+		
+		<hr style="border: inset">
+
+		<div style=" margin: auto; margin-left: 10px; margin-top: 30px; font-weight: bold;">CATEGORIA</div>
+		<div id="secundario-container" style="margin-left: 85px; margin-top: -18px;">
+		<input type="submit" value="trabalho">
+		<input type="submit" value="lazer">
+		<input type="submit" value="estudo">
+		</div>
+
+		<hr style="border: inset">
+
+		<div style=" margin: auto; margin-left: 10px; margin-top: 30px; font-weight: bold;">TAG</div>
+		<div id="secundario-container" style="margin-left: 85px; margin-top: -18px;">
+		<input type="submit" style="background-color: #F34146;">
+		<input type="submit" style="background-color: #ECF137;">
+		<input type="submit" style="background-color: #69F42D;">
+		</div>
+
+		<hr style="border: inset">
+
+		<div style=" margin: auto; margin-left: 10px; margin-top: 30px; font-weight: bold;">DATA DE CONCLUSÃO:</div>
+		<input type="date" style="width: 200px; margin-right: 60px; margin-top: -30px;" name="data_conclusao" id="data_conclusao" required>
+
+		<div id="ad-tarefa">
+			<input type="submit" value="adicionar tarefa"style="width: 50%">
+		</div>
+		
+
+	</div> 
+	<script src="public/scripts/nav.js"></script> 
+	
+</body>
+</html>
