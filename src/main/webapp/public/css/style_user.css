@@ -1,0 +1,94 @@
+@charset "ISO-8859-1";
+
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: radial-gradient(circle at 3.79% 37.62%, #ffffd0 0, #f8fab7 50%, #e0e89f 100%);
+        }
+        .box{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 2.5%;
+            border-radius: 15px;
+            max-width: 23%;
+        }
+        fieldset{
+            border: 3px solid #65AD21;
+        
+        }
+        legend{
+            border: 1px solid #65AD21;;
+            padding: 2.5%;
+            text-align: center;
+           	background: #65AD21;
+            border-radius: 8px;
+        }
+        .inputBox{
+            position: relative;
+        }
+        .inputUser{
+            background: none;
+            border: none;
+            border-bottom: 1px solid white;
+            outline: none;
+            color: white;
+            font-size: 15px;
+            width: 100%;
+            letter-spacing: 2px;
+        }
+        .labelInput{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            pointer-events: none;
+            transition: .5s;
+        }
+        .inputUser:focus ~ .labelInput,
+        .inputUser:valid ~ .labelInput{
+            top: -20px;
+            font-size: 12px;
+            color: #A1CEF8;
+        }
+        #data_nascimento{
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+        #submit{
+            background: #65AD21;
+            width: 100%;
+            border: none;
+            padding: 10%;
+            color: white;
+            font-size: 100%;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        #submit:hover{
+            background-image: linear-gradient(to right,#1B223C, #1B223C);
+
+        }
+        
+#voltar input[type="button"]{
+	 background: #65AD21;
+     width: 100%;
+     border: none;
+     padding: 10%;
+     color: white;
+     font-size: 100%;
+     cursor: pointer;
+     border-radius: 10px;
+}
+#voltar input[type="button"]:hover {
+	background-image: linear-gradient(to right,#1B223C, #1B223C);
+
+}
+
+
+
