@@ -10,6 +10,7 @@
 <body>
 	
 	<div id="inicio-cabecalho">
+
 		<div class="hero">
 			<nav>	
 			<input type="text" name="tarefa" id="tarefa" placeholder="Pesquise uma tarefa" autocomplete="off">	
@@ -31,7 +32,7 @@
 							<p>Help</p>
 							<span></span>         	 			
          	 			</a>
-         	 			<a href="index.html" class="sub-menu-link">
+         	 			<a onclick="logout()" class="sub-menu-link" >
 							<img src="public/images/logout.png">
 							<p>Deslogar</p>
 							<span></span>         	 			
@@ -99,8 +100,19 @@
 			<input type="submit" value="adicionar tarefa"style="width: 50%">
 		</div>
 		
-
+	
 	</div> 
+	 <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+	
+    <!-- Our script must be loaded after firebase references -->
+	<script src="public/scripts/logOut.js"></script>
+	<script src="public/scripts/auth_guard.js"></script>
 	<script src="public/scripts/nav.js"></script> 
 	
 </body>

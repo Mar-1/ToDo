@@ -62,12 +62,18 @@ nav{
 	margin: 15px 0;
 }
 
+.user-info a{
+	cursor: pointer;
+}
+
 .sub-menu-link{
 	display: flex;
 	align-items: center;
 	text-decoration:none;
 	color: #525252;
 	margin: 12px 0;
+	cursor:pointer;
+
 }
 
 .sub-menu-link img{

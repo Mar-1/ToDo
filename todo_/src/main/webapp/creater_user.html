@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/style_user.css">
+   <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="public/css/style_user.css">
     
     <title>Criar conta</title>
     
@@ -13,23 +12,33 @@
         <div id="content_container">
             <div id="form_container">
                 <div id="form_header_container">
-                    <h2 id="form_header"> Login + Firebase Database </h2>
+                    <h2 id="form_header"> Registrar Conta</h2>
                 </div>
 
                 <div id="form_content_container">
                     <div id="form_content_inner_container">
                         <input type="text" id="full_name" placeholder="Full name">
-                        <input type="email" id="email" placeholder="Email">
-                        <input type="password" id="password" placeholder="New Password">
+                  
+				<input type="email" name="email" id="email" placeholder="Digite seu email" autocomplete="off">
+				
+				<input type="password" name="password" id="password" placeholder="Digite a sua senha">
 
-                        <input type="text" id="favourite_song" placeholder="The Best Song Ever">
-                        <input type="text" id="milk_before_cereal" placeholder="Milk Before Cereal? ( Yes | No )">
-
+                        <input type="text" id="apelido_user" placeholder="Apelido">
+                        
+                        <!-- <input type="button" onclick="register()" value="Registrar"> -->
+						
                         <div id="button_container">
-                            <button onclick="login()">Login</button>
+                          
                             <button onclick="register()">Register</button>
-                        </div>
-
+                            <br>
+                                       
+                        </div> 
+                        <br>
+            
+						<div id="button_container">
+					 		<button onclick="history.go(-1)">Voltar</button>
+					 	</div>  
+					 	 
                     </div>
                 </div>
             </div>
@@ -45,5 +54,5 @@
     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
 
     <!-- Our script must be loaded after firebase references -->
-    <script src="firebase.js"></script>
+    <script src="public/scripts/auth_firebase.js"></script>
 </html>
