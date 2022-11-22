@@ -11,18 +11,18 @@ Este software foi elaborado para a disciplina de progweb onde consiste em uma ag
 
 ## Funcionalidades básicas
 
-- [ ] Definir tarefas
-- [ ] Agrupar tarefas em listas
-- [ ] Modificar o status das tarefas
-- [ ] Visualizar tarefas e listas
-- [ ] Buscar por tarefas e listas
+- [x] Definir tarefas
+- [x] Agrupar tarefas em listas
+- [x] Modificar o status das tarefas
+- [x] Visualizar tarefas e listas
+- [x] Buscar por tarefas e listas
 
 ## Bônus
 
 - [ ] Definir datas limite
 - [ ] Acompanhar o andamento geral
 - [ ] Compartilhar listas com outros usuários ou deixar público
-- [ ] Adicionar etiquetas de marcação
+- [x] Adicionar etiquetas de marcação
 
 ## Git com funções
 https://github.com/ThePapaHost/to-do-progweb.git
